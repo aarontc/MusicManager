@@ -1,3 +1,5 @@
-MusicManager-build-desktop/
-src/MusicManager.pro.user*
+src/src.pro.user*
+test/test.pro.user*
+app/app.pro.user*
+MusicManager.pro.user*
 
