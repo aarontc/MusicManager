@@ -7,3 +7,5 @@ SUBDIRS += \
 	app
 
 
+LIBS += -lFLAC++
+

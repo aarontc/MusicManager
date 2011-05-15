@@ -11,7 +11,7 @@ class FreeLosslessAudioCodecFileMetadata : public QObject
 	Q_OBJECT
 public:
 	explicit FreeLosslessAudioCodecFileMetadata(QObject *parent = 0);
-	QString GetArtist(QString& filename);
+	QString GetArtist(QString filename);
 
 
 signals:

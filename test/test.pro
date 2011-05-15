@@ -16,11 +16,17 @@ TEMPLATE = app
 
 
 SOURCES += tst_musicmanagertest.cpp \
-	flacmetadate.cpp
+	flacmetadata.cpp
 DEFINES += SRCDIR=\\\"$$PWD/\\\"
 
 QMAKE_POST_LINK += ./$${TARGET}
 
+
+LIBS += -L../src
+LIBS += -lMusicManager
+
+
+LIBS += -lFLAC++
 
 HEADERS += \
 	flacmetadata.h

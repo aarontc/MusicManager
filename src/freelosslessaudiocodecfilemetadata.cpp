@@ -8,7 +8,7 @@ FreeLosslessAudioCodecFileMetadata::FreeLosslessAudioCodecFileMetadata(QObject *
 }
 
 
-QString FreeLosslessAudioCodecFileMetadata::GetArtist(QString &filename) {
+QString FreeLosslessAudioCodecFileMetadata::GetArtist(QString filename) {
 
 	FLAC::Metadata::Chain blah;
 	FLAC::Metadata::Iterator myiterator;
@@ -28,11 +28,11 @@ QString FreeLosslessAudioCodecFileMetadata::GetArtist(QString &filename) {
 		while(myiterator.next()) {
 			Prototype* blah2 = myiterator.get_block();
 			if(blah2->get_type() == FLAC__METADATA_TYPE_VORBIS_COMMENT) {
-
+				return("Got here but nothing to return :)");
 			}
 
 		}
 	}
 
-	return("FUCKYOU");
+	return("Unable to retrieve artist");
 }

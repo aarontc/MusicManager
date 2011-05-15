@@ -4,6 +4,8 @@
 #include <QObject>
 #include <QtTest/QtTest>
 
+#include "../src/freelosslessaudiocodecfilemetadata.h"
+
 class FLACMetadata : public QObject
 {
 	Q_OBJECT
