@@ -10,9 +10,7 @@ int main(int argc, char *argv[])
 	SetApplicationValues();
 
 	MainWindow w;
-	w.setWindowTitle(QCoreApplication::applicationName() +
-					 " : " +
-					 QCoreApplication::applicationVersion());
+	w.setWindowTitle(QCoreApplication::applicationName() + " : " + QCoreApplication::applicationVersion());
 	w.show();
 
 	return a.exec();
