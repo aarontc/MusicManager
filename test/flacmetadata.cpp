@@ -10,7 +10,7 @@ FLACMetadata::FLACMetadata(QObject *parent) :
 void FLACMetadata::practice() {
 
 	FreeLosslessAudioCodecFileMetadata blah;
-	QString artist = blah.GetArtist("/tmp/blah.flac");
+//	QString artist = blah.GetArtist("/tmp/blah.flac");
 
-	QCOMPARE(artist, QString("Test Artist"));
+//	QCOMPARE(artist, QString("Test Artist"));
 }
