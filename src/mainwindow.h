@@ -2,8 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "fileconverter.h"
 #include <QList>
+#include <QSettings>
+
+#include "fileconverter.h"
 
 namespace Ui {
 	class MainWindow;
@@ -18,10 +20,12 @@ public:
 	~MainWindow();
 
 private slots:
-	void on_pushButton_clicked();
 
 private:
 	Ui::MainWindow *ui;
+	void LoadDefaultValues();
+	void SaveDefaultValues();
+
 	QList<FileConverter*> fileConverters;
 };
 
